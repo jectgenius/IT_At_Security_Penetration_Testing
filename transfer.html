@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <title>WISET Bank</title>
+</head>
+<body>
+    <section>
+        <form action="" name="loginform" method="POST" id="login_form" class="form">
+            <p>
+                은행 선택 :  
+                <select name="account" required>
+                  <option value="wisetbank"> 위셋뱅크 </option>
+                </select>
+            </p>
+            <p>
+                보낼 금액 : <input type="text" size="10" 
+                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+            </p>
+            <p>
+                <button type="button" onClick="location.href='./account.html'"> 확인 </button>
+            </p>
+        </form>
+    </section>
+</body>
+</html>
